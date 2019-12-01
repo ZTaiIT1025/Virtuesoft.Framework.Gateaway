@@ -59,7 +59,8 @@
 新增接口(案列):
 
 <code>
- public class Member:GateawayBase
+	
+	public class Member:GateawayBase
     {
         public override string Controller => "member";
         public async Task<int> Online()
@@ -77,6 +78,8 @@
             };
         }
     }
+ 
+	
 </code>	
 	
 	
