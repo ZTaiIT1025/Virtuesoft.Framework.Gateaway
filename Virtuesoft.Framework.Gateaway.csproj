@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ApplicationIcon>www.ico.la_1a1695bace0f5f1654748c25a182eebc_64X64.ico</ApplicationIcon>
+    <Authors>sunyonghuan@hotmail.com</Authors>
+    <Company>布德软件科技</Company>
+    <Description>微型高效率接口框架
+简单,干净尽量减少了依赖项.
+框架自带接口文档,通过调用默认的api.doc方法可以查看所有的接口.
+只需要添加类就可以完成接口的开发,让程序员全心的只专注于业务逻辑.
+适用于简单逻辑的接口编写,无状态的接口.
+默认验证用户权限是通过签名方式,支持可以自定义签名验证.
+支持IP黑白名单和简单的过滤.
+新增支持回调函数不验证签名
+新增回调函数不格式化返回数据
+新增不验证签名和格式化参数的方法
+新增日志保存到数据库</Description>
+    <Copyright>布德软件科技</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>1.1.0.5</AssemblyVersion>
+    <FileVersion>1.1.0.5</FileVersion>
+    <PackageReleaseNotes>取消对请求api文档接口的签名验证
+取消对tourl的排除sign的做法
+GateawayRoute可重写Invoke方法,进行自定义路由
+新增不验证签名和格式化参数的方法</PackageReleaseNotes>
+    <Version>1.1.7</Version>
+    <PackageProjectUrl>http://www.virtuesoft.cn/</PackageProjectUrl>
+    <PackageLicenseUrl>http://www.virtuesoft.cn/</PackageLicenseUrl>
+    <PackageIconUrl>http://www.virtuesoft.cn/images/logo.200.jpg</PackageIconUrl>
+    <PackageTags>gateaway</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>F:\Buday\Buday.Framework\Virtuesoft.Framework.Gateaway\Virtuesoft.Framework.Gateaway.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+</Project>
