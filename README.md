@@ -1,5 +1,6 @@
-# Virtuesoft.Framework.Gateaway
+# Virtuesoft.Framework.Gateaway 接口框架
 微型高效率接口框架 简单,干净尽量减少了依赖项. 框架自带接口文档,通过调用默认的api.doc方法可以查看所有的接口. 只需要添加类就可以完成接口的开发,让程序员全心的只专注于业务逻辑. 适用于简单逻辑的接口编写,无状态的接口. 默认验证用户权限是通过签名方式,支持可以自定义签名验证. 支持IP黑白名单和简单的过滤. 新增支持回调函数不验证签名 新增回调函数不格式化返回数据 新增不验证签名和格式化参数的方法 新增日志保存到数据库
+nuget:https://www.nuget.org/packages/Virtuesoft.Framework.Gateaway/
 简单使用:
 
 
