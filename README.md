@@ -58,7 +58,7 @@
     }
 新增接口(案列):
 
-
+<code>
  public class Member:GateawayBase
     {
         public override string Controller => "member";
@@ -66,7 +66,7 @@
         {
             return await Task.FromResult(0);
         }
-        //像我这种懒人一般都直接返回Task<Object>.
+        //像我这种懒人一般都直接返回 Task<Object>. 
         public User[] Paged() {
             return new User[] {
                 new User(){ name="好",phone="1111111",sex="男"},
@@ -77,6 +77,9 @@
             };
         }
     }
+</code>	
+	
+	
     public class User {
         public string name { get; set; }
         public string sex { get; set; }
