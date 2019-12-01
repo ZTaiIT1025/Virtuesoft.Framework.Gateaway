@@ -72,7 +72,7 @@
             return new User[] {
                 new User(){ name="好",phone="1111111",sex="男"},
                 new User(){ name="多",phone="2222222",sex="女" },
-                new User(){ name="吊",phone="3333333",sex="男"},
+                new User(){ name="大",phone="3333333",sex="男"},
                 new User(){ name="毛",phone="4444444",sex="女"},
                 new User(){ name="啊",phone="5555555",sex="男"},
             };
