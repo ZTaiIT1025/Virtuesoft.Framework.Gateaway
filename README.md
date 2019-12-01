@@ -57,6 +57,8 @@
     "参数1":"自己下载源码去玩"
     }
 新增接口(案列):
+
+
  public class Member:GateawayBase
     {
         public override string Controller => "member";
@@ -80,12 +82,17 @@
         public string sex { get; set; }
         public string phone { get; set; }
     }
+	
+	
     接口访问:
+    
+    
     post->https://gateaway.virtuesoft.cn
         header->Content-Type:application/json
         body->
         {
     "method": "member.paged"
     }
+
 
 这套简单的接口框架公司自己在用于内部服务接口,目前最高日承受交易量2000多万,平均响应实效600ms,估计内部数据计算还有点优化的空间,光接口响应是在20ms左右.
